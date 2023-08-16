@@ -28,7 +28,7 @@ function ajaxUsuario(){
         if (estado){
             $.ajax({
                 type: "POST",
-                url: "logica.php",
+                url: "./logica.php",
                 dataType: "json",
                 data: {"usuario": nombreUsuario, "h" : 0, "estado" : estado},
                 success: function(resJSONUno){
@@ -46,7 +46,7 @@ function ajaxUsuario(){
             //Si el valor de la variable es falso
             $.ajax({
                 type: "POST",
-                url: "logica.php",
+                url: "./logica.php",
                 dataType: "json",
                 data: {"usuario": nombreUsuario, "h" : 0, "estado" : estado},
                 success: function(resJSON){
@@ -132,7 +132,7 @@ function clics(){
 function ajax(){
     $.ajax({
         type: "POST",
-        url: "logica.php",
+        url: "./logica.php",
         data: {"pulsaciones": puntuacionFinal, "h" : 1, "usuario" : nombreUsuario},
         dataType: "json",
         success: function(resJSONTWO){
@@ -156,7 +156,7 @@ function ajax(){
 function puntuacionInicio(){
     $.ajax({
         type: "POST",
-        url: "logica.php",
+        url: "./logica.php",
         dataType: "json",
         data: {"h" : 2, "usuario" : nombreUsuario},
         success: function (resjson){
