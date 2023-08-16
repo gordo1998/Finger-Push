@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="pulsador.js" defer></script>
+    <link rel="stylesheet" href="pulsador.css">
+</head>
+<body>
+    <div id="configuracion"></div>
+
+    <div id="poner-user">
+        <div id="elementos-user">
+            <div>
+                <p>Introduce usser</p>
+            </div>
+            <div>
+                <input type="text" id="escribir">
+                <button id="enviar"><img src="giff/enviar.png" alt="Icono de enviar"></button>
+            </div>
+        </div>
+        <div id="mensaje-error"></div>
+        <div id="crear-user">Create User</div>
+    </div>
+
+    <div id="juego">
+        <audio id="boton-empezar">
+            <source src="sonidos/SD_NAVIGATE_55.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="boton-pulsar">
+            <source src="sonidos/SD_NAVIGATE_57.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="nuevo-record">
+            <source src="sonidos/007741506_prev.mp3" type="audio/mpeg">
+        </audio>
+        <div id="arriba">
+            <div class="boton-configuracion">C</div>
+            <div id="record-puntos">
+                <div>0</div>
+                <div>/</div>
+            </div>
+            <div id="contenido">10</div>
+        </div>
+        <div id="numero-pulsaciones">0</div>
+        <div id="start">Start</div>
+        <div id="pulsador">Pulsa</div>
+    </div>
+    
+</body>
+</html>
