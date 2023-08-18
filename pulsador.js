@@ -17,6 +17,9 @@ $("#crear-user").click(function(){
 $("#enviar").click(ajaxUsuario);
 
 function ajaxUsuario(){
+    //Ponemos la canción
+    var cancionInterestelar = document.getElementById("cancion-interestelar");
+    cancionInterestelar.play();
     //En primera instancia cogemos el valor del input
     nombreUsuario = $("#escribir").val();
     //El valor tiene que ser distinto a vacío para que se puedan tratar los datos
