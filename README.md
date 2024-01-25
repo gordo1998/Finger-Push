@@ -3,9 +3,9 @@ To run this program you need to have:
 - Mysql
 - Xampp
 
-In Msql you have to import the Pulsador.sql file and then execute everything.
+In Mysql you have to import the Pulsador.sql file and then execute everything.
 In Xampp you have to execute the Apache server, but before, you need to put the project in the next route:
-../../xammp/htdocs/
+../../xampp/htdocs/
 
 To run the index.html you have to go to the browser and put:
 localhost:80/"yourNameProject"
